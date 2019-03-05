@@ -1,12 +1,13 @@
-## Welcome to GitHub Pages
+## FACTS Threat Meter
+This addon is designed to remove some general features from the Diamond Threat Meter and also improve the look and feel of the WoW addon. 
 
-You can use the [editor on GitHub](https://github.com/webbelito/FACTSThreatMeter/edit/master/README.md) to maintain and preview the content for your website in Markdown files.
+### Support
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+This addon will only be supported for TBC 2.4.3 with a specific setup. The support will be a case by case support with no guarantee for bug fixes etc.
 
-### Markdown
+### Credits
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+The addon project has been copied from the Diamond Threat Meter and all the features should be credited to the team and developers of Diamond Threat Meter.
 
 ```markdown
 Syntax highlighted code block
@@ -25,13 +26,3 @@ Syntax highlighted code block
 
 [Link](url) and ![Image](src)
 ```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/webbelito/FACTSThreatMeter/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.

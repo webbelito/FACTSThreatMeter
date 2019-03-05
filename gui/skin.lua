@@ -24,7 +24,7 @@ local DTM_DefaultSkins = {
             ["BackdropUseTile"] = 0,
             ["TileTexture"] = "",
             ["EdgeTexture"] = "",
-            ["WidgetTexture"] = "Diamond\\Diamond32x32",
+            ["WidgetTexture"] = "",
             ["WidgetPositionX"] = 0.06,
             ["WidgetPositionY"] = 24,
         },

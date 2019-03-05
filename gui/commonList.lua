@@ -62,7 +62,7 @@ local function ApplyCommonSkin(listFrame)
     listFrame.useAggroLightning = cfg("Bars", "AggroGraphicEffect");
 
     -- Prepare the widget if there's one. Adjust the header text in function.
-    listFrame.widgetTexture = cfg("Display", "WidgetTexture") or '';
+    listFrame.widgetTexture = '';
     listFrame.widgetPositionX = cfg("Display", "WidgetPositionX");
     listFrame.widgetPositionY = cfg("Display", "WidgetPositionY");
     listFrame.headerText:ClearAllPoints();

@@ -111,8 +111,8 @@ local function ApplySkin(threatListFrame)
     threatListFrame.displayAggroGain = cfg("ThreatList", "DisplayAggroGain");
     threatListFrame.onlyHostile = cfg("ThreatList", "OnlyHostile");
     threatListFrame.raiseAggroToTop = cfg("ThreatList", "RaiseAggroToTop");
-    threatListFrame.displayLevel = cfg("ThreatList", "DisplayLevel");
-    threatListFrame.displayHealth = cfg("ThreatList", "DisplayHealth");
+    threatListFrame.displayLevel = false;
+    threatListFrame.displayHealth = false;
 
     -- Handle the cursor (the crystal in the original skin).
     threatListFrame.cursorTexture = cfg("ThreatList", "CursorTexture");

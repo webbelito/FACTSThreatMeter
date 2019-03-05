@@ -246,7 +246,7 @@ local function ApplySkin(row)
     row.fadeCoeff = cfg("Bars", "FadeCoeff") + 0.001; -- The added 0.001 will prevent divisions by zero.
     row.sortCoeff = cfg("Bars", "SortCoeff") + 0.001;
     row.isSmooth = cfg("Bars", "Smooth");
-    row.showSpark = cfg("Bars", "ShowSpark");
+    row.showSpark = false;
 
     row.backgroundBarTexture:SetTexture( DTM_Resources_GetAbsolutePath("GFX", cfg("Bars", "BackgroundTexture")) );
     row:SetStatusBarTexture( DTM_Resources_GetAbsolutePath("GFX", cfg("Bars", "FillTexture")) );

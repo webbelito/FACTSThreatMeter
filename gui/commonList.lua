@@ -59,7 +59,7 @@ local function ApplyCommonSkin(listFrame)
     listFrame.fadeCoeff = cfg("Bars", "FadeCoeff") + 0.001; -- The added 0.001 will prevent divisions by zero.
     listFrame.sortCoeff = cfg("Bars", "SortCoeff") + 0.001;
     listFrame.isLocked = cfg("General", "LockFrames");
-    listFrame.useAggroLightning = cfg("Bars", "AggroGraphicEffect");
+    listFrame.useAggroLightning = false;
 
     -- Prepare the widget if there's one. Adjust the header text in function.
     listFrame.widgetTexture = '';
@@ -81,8 +81,8 @@ local function ApplyCommonSkin(listFrame)
 
     -- Handle the backdrop
     local r, g, b, a = 0.2, 0.2, 0.2, 0.5;
-    listFrame.edgeTexture = cfg("Display", "EdgeTexture") or '';
-    listFrame.tileTexture = cfg("Display", "TileTexture") or '';
+    listFrame.edgeTexture = '';
+    listFrame.tileTexture = '';
 
     -- Use Blizzard tooltip backdrop in case no texture is specified.
     if ( #listFrame.edgeTexture == 0 ) then

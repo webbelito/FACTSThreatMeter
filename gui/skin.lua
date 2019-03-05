@@ -32,9 +32,9 @@ local DTM_DefaultSkins = {
         ["Bars"] = {
             ["BackgroundTexture"] = "Diamond\\RowBackground",
             ["FillTexture"] = "Diamond\\RowBar",
-            ["ShowSpark"] = 1,
+            ["ShowSpark"] = 0,
             ["Smooth"] = 0,
-            ["AggroGraphicEffect"] = 1,
+            ["AggroGraphicEffect"] = 0,
             ["FadeCoeff"] = 0.000,
             ["SortCoeff"] = 0.000,
         },

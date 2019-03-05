@@ -1,5 +1,5 @@
 <UI xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/">
-	<Script file="threatList.lua" /> 
+	<Script file="threatList.lua" />
 
 	<!--
 		This XML file defines the standard threat list. It is a controllable widget, using special methods & attributes.
@@ -42,16 +42,16 @@
 					</Layer>
 				</Layers>
 
-				<Scripts>	
+				<Scripts>
 					<OnLoad>
 						self.standbyText = getglobal(self:GetName().."_StandbyText");
-					</OnLoad> 
+					</OnLoad>
 				</Scripts>
 			</Frame>
 
 			<Frame name="$parent_HeaderRow" hidden="true">
 				<Size>
-					<AbsDimension x="256" y="40"/>
+					<AbsDimension x="256" y="32"/>
 				</Size>
 
 				<Anchors>
@@ -107,7 +107,7 @@
 						self.name:SetText( DTM_Localise("Name") );
 						self.threat:SetText( DTM_Localise("Threat") );
 						self.tps:SetText( DTM_Localise("TPS") );
-					</OnLoad> 
+					</OnLoad>
 				</Scripts>
 			</Frame>
 

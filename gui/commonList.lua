@@ -91,7 +91,7 @@ local function ApplyCommonSkin(listFrame)
   else
         listFrame.edgeTexture = DTM_Resources_GetAbsolutePath("GFX", listFrame.edgeTexture);
         listFrame.backdrop.edgeSize = 8;
-        --listFrame:SetBackdropBorderColor(1.0, 1.0, 1.0, 1.0);
+        listFrame:SetBackdropBorderColor(1.0, 1.0, 1.0, 1.0);
     end
     if ( #listFrame.tileTexture == 0 ) then
         listFrame.tileTexture = "";

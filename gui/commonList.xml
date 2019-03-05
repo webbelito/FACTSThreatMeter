@@ -1,5 +1,5 @@
 <UI xmlns="http://www.blizzard.com/wow/ui/" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.blizzard.com/wow/ui/">
-	<Script file="commonList.lua" /> 
+	<Script file="commonList.lua" />
 
 	<!--
 		This XML file defines the common list. It is a controllable widget, using special methods & attributes.

@@ -45,9 +45,38 @@ local ANIMATION_LENGTH_WARNING_END = 0.500;
 local LIGHTING_ANIMATION_DELAY = 3.000;
 local LIGHTING_ANIMATION_DURATION = 0.500;
 
+
+
 -- --------------------------------------------------------------------
 -- **                            Methods                             **
 -- --------------------------------------------------------------------
+
+-- ********************************************************************
+-- * row:IsAPlayableClass(class)        															*
+-- ********************************************************************
+-- * Arguments:                                                       *
+-- * >> row: the threat list row to operate on.                       *
+-- * >> class: the class that we need to check if it's playable.      *
+-- ********************************************************************
+-- * Checks if a class is playable as a player and returns true/false *
+-- ********************************************************************
+local function IsAPlayableClass(class)
+
+	if class == "WARRIOR" or
+			class == "MAGE" or
+			class == "ROGUE" or
+			class == "DRUID" or
+			class == "HUNTER" or
+			class == "SHAMAN" or
+			class == "PRIEST" or
+			class == "WARLOCK" or
+			class == "PALADIN"
+	then
+		return true
+	else
+		return false
+	end
+end
 
 -- ********************************************************************
 -- * row:Activate(name, guid, threat, class, aggroThreat, ...)        *
@@ -96,12 +125,17 @@ local function Activate(row, name, guid, threat, class, aggroThreat, position, h
         row.dangerRedBar:SetFrameLevel( row.baseLevel + 1 );
         row.backgroundBar:SetFrameLevel( row.baseLevel );
 
-				row:SetStatusBarColor(CLASS_COLORS[class][1], CLASS_COLORS[class][2], CLASS_COLORS[class][3])
+				-- Check if it's a player and change status bar to class color
+				if(IsAPlayableClass(row.class)) then
+						row:SetStatusBarColor(CLASS_COLORS[row.class][1], CLASS_COLORS[row.class][2], CLASS_COLORS[row.class][3]);
+			  end
 
         row:Show();
         return;
     end
 end
+
+
 
 -- ********************************************************************
 -- * row:Update(name, guid, threat, class, aggroThreat, ...)          *
